@@ -14,6 +14,18 @@
 # EXTERNAL cache entries
 ########################
 
+//The directory containing a CMake configuration file for Boost.
+Boost_DIR:PATH=Boost_DIR-NOTFOUND
+
+//Path to a file.
+Boost_INCLUDE_DIR:PATH=Boost_INCLUDE_DIR-NOTFOUND
+
+//Boost system library (debug)
+Boost_SYSTEM_LIBRARY_DEBUG:FILEPATH=Boost_SYSTEM_LIBRARY_DEBUG-NOTFOUND
+
+//Boost system library (release)
+Boost_SYSTEM_LIBRARY_RELEASE:FILEPATH=Boost_SYSTEM_LIBRARY_RELEASE-NOTFOUND
+
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
 CMAKE_BUILD_TYPE:STRING=Debug
@@ -212,6 +224,12 @@ network-monitor_SOURCE_DIR:STATIC=D:/cppcoding/network-monitor
 # INTERNAL cache entries
 ########################
 
+//ADVANCED property for variable: Boost_DIR
+Boost_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_SYSTEM_LIBRARY_DEBUG
+Boost_SYSTEM_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_SYSTEM_LIBRARY_RELEASE
+Boost_SYSTEM_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //This is the directory where this CMakeCache.txt was created
 CMAKE_CACHEFILE_DIR:INTERNAL=d:/cppcoding/network-monitor/cmake-build-debug
 //Major version of cmake used to create the current loaded cache
